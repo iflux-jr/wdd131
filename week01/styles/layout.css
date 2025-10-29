@@ -1,0 +1,64 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header section */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 2rem 1.5rem;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.75rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main section */
+main {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  background-color: #ccc;
+  flex: 3;
+  padding: 1.5rem;
+}
+
+.aside-content {
+  background-color: #fff;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
