@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmanuel Uko">
+    <meta name="description" content="WDD 131 | Temple Album showcasing selected temples around the world. Browse temple images and learn more about locations.">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temple Album</h1>
+            <button id="hamburger-btn" class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Temples Around the World</h2>
+        <div class="album-grid">
+            <figure>
+                <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra_ghana_temple.jpeg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/birmingham_alabama_temple_lds.jpg" alt="Birmingham Alabama Temple">
+                <figcaption>Birmingham Alabama Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cape_town_africa_temple_rendering.jpg" alt="Cape Town South Africa Temple">
+                <figcaption>Cape Town South Africa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/chicago_illinois_temple.jpg" alt="Chicago Illinois Temple">
+                <figcaption>Chicago Illinois Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/star_valley_wyoming_temple.jpg" alt="Star Valley Wyoming Temple">
+                <figcaption>Star Valley Wyoming Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/taipei_temple.jpg" alt="Taipei Taiwan Temple">
+                <figcaption>Taipei Taiwan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tallahassee_florida_temple.jpg" alt="Tallahassee Florida Temple">
+                <figcaption>Tallahassee Florida Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/yigo_guam_temple.jpg" alt="Yigo Guam Temple">
+                <figcaption>Yigo Guam Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Temple Album. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/temples.js"></script>
+</body>
+</html>

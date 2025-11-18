@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+    <meta name="description" content="This page dynamically displays temples based on user filters.">
+    <meta name="author" content="Emmanuel Uko">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to new CSS files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <!-- Link to new JS file -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <!-- <header>
+        <h1>Temple Album</h1>
+        <nav class="navigation">
+            <a href="#" class="filter" data-filter="home">Home</a>
+            <a href="#" class="filter" data-filter="old">Old</a>
+            <a href="#" class="filter" data-filter="new">New</a>
+            <a href="#" class="filter" data-filter="large">Large</a>
+            <a href="#" class="filter" data-filter="small">Small</a>
+        </nav>
+        <button class="hamburger" aria-label="Open menu">&#9776;</button>
+    </header> -->
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button class="hamburger" aria-label="Open menu">&#9776;</button>
+            <nav class="navigation">
+                <a href="#" class="filter" data-filter="home">Home</a>
+                <a href="#" class="filter" data-filter="old">Old</a>
+                <a href="#" class="filter" data-filter="new">New</a>
+                <a href="#" class="filter" data-filter="large">Large</a>
+                <a href="#" class="filter" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
+
+    <main>
+        <!-- <h2></h2> -->
+        <div class="temple-cards-container" id="templeCards"></div>
+    </main>
+    <footer>    
+        <p>&copy;<span id="currentYear"></span> Emmanuel Uko | Cross River State, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
