@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madagascar — Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1>Madagascar</h1>
+    <div class="flag-stripe"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/portugal-large.webp 1200w" media="(min-width:900px)" type="image/webp">
+      <source srcset="images/portugal-large.webp 800w" media="(min-width:480px)" type="image/webp">
+      <img src="images/portugal-large.webp" alt="Ring-tailed lemurs resting in Madagascar" class="hero-img">
+    </picture>
+
+    <!-- DESKTOP OVERLAYS -->
+    <aside class="card card-data" aria-labelledby="data-heading">
+      <h2 id="data-heading">Data</h2>
+      <ul>
+        <li><span>Area:</span> 587,041 sq km</li>
+        <li><span>Population:</span> 27,691,018</li>
+        <li><span>Capital:</span> Antananarivo</li>
+        <li><span>Languages:</span> Malagasy, French</li>
+        <li><span>Currency:</span> Malagasy Ariary</li>
+        <li><span>Time Zone:</span> UTC+3</li>
+        <li><span>Calling Code:</span> +261</li>
+        <li><span>Internet TLD:</span> .mg</li>
+      </ul>
+    </aside>
+
+    <aside class="card card-weather" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Weather</h2>
+      <img src="images/cloudy.svg" alt="" class="weather-svg" aria-hidden="true">
+      <dl>
+        <div><dt>Temperature:</dt><dd><span id="temp">10</span> °C</dd></div>
+        <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+        <div><dt>Wind:</dt><dd><span id="wind">5</span> km/h</dd></div>
+        <div><dt>Wind Chill:</dt><dd id="windchill">—</dd></div>
+      </dl>
+    </aside>
+
+  </section>
+
+  <!-- MOBILE STACKED -->
+  <main class="main-content">
+    <section>
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 587,041 sq km</li>
+        <li><strong>Population:</strong> 27,691,018</li>
+        <li><strong>Capital:</strong> Antananarivo</li>
+        <li><strong>Languages:</strong> Malagasy, French</li>
+        <li><strong>Currency:</strong> Malagasy Ariary</li>
+        <li><strong>Time Zone:</strong> UTC+3</li>
+        <li><strong>Calling Code:</strong> +261</li>
+        <li><strong>Internet TLD:</strong> .mg</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Weather <span class="mobile-icon">⛅</span></h2>
+      <img src="images/cloudy.svg" alt="" class="weather-svg-mobile" aria-hidden="true">
+      <dl>
+        <div><dt>Temperature:</dt><dd><span id="temp-m">10</span> °C</dd></div>
+        <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+        <div><dt>Wind:</dt><dd><span id="wind-m">5</span> km/h</dd></div>
+        <div><dt>Wind Chill:</dt><dd id="windchill-m">—</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> 🌸 Rubia Magdelena Francesco 🌸 Madagascar</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+</body>
+</html>

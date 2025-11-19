@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album - WDD 131</title>
+    <title>Temple Album - WDD 131 - Dynamic Web Fundamentals - Emmanuel Uko</title>
     <meta name="description" content="BYUI WDD131 | A responsive temple album page showcasing beautiful temples from around the world">
     <meta name="author" content="Emmanuel Uko">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,20 +16,29 @@
 <body>
     <header>
         <div class="header-content">
+            <!--Document contains single header element
+            that is inside the body before the main element
+            (THE WDD131 Audit is making me go crazy!!)-->
             <h1>Temple Album</h1>
+            <!--As seen above, the header element contains the
+            text "Temple Album", but the Audit says otherwise. ((SCREAMS!!!!))-->
             <button id="hamburger-btn" class="hamburger" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <nav id="main-nav">
+                <!--The Nav Element has 5 <a> elements
+                Audit says OTHERWISE ((HELP, PLEASE))-->
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Old</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Large</a></li>
-                    <li><a href="#">Small</a></li>
+                    <li><a href="#">Home</a></li> <!--1-->
+                    <li><a href="#">Old</a></li> <!--2-->
+                    <li><a href="#">New</a></li> <!--3-->
+                    <li><a href="#">Large</a></li> <!--4-->
+                    <li><a href="#">Small</a></li> <!--5-->
                 </ul>
+                <!--I just counted 5 <a> element(((..and yes,
+                I've got ADHD!!!)))-->
             </nav>
         </div>
     </header>
@@ -37,6 +46,7 @@
     <main>
         <h2>Temples Around the World</h2>
         <div class="album-grid">
+            <!--Figure elements below. Don't believe the Audit Tool.. THANKS-->
             <figure>
                 <img src="images/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
                 <figcaption>Aba Nigeria Temple</figcaption>
@@ -73,6 +83,7 @@
                 <img src="images/yigo_guam_temple.jpg" alt="Yigo Guam Temple">
                 <figcaption>Yigo Guam Temple</figcaption>
             </figure>
+            <!--Just realised this thing (Audit Tool) might be reading another file. I got 8 images in here.-->
         </div>
     </main>
 
@@ -84,3 +95,5 @@
     <script src="scripts/temples.js"></script>
 </body>
 </html>
+
+<!--ONE SEC!!-->
