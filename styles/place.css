@@ -1,12 +1,12 @@
 /* Variables */
 :root {
-  --flag-red: #FC3E32;
+  --flag-red:   #FC3E32;
   --flag-green: #007E39;
   --flag-white: #FFFFFF;
-  --glass: rgba(255, 255, 255, 0.92);
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  --text: #1a1a1a;
-  --accent: #2d6f49;
+  --glass:      #FFFFFF;
+  --shadow:     #D9D9D9;
+  --text:       #1A1A1A;
+  --accent:     #2D6F49;
   --radius: 12px;
   --gap: 1.5rem;
   --max-width: 1200px;
