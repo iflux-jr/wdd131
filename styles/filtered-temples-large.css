@@ -1,0 +1,49 @@
+/* styles/filtered-temples-large.css - Desktop Styles */
+@media (min-width: 768px) {
+    /* Header adjustments */
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* Album grid for larger screens */
+    .album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .temple-card img {
+        height: 250px;
+    }
+
+    /* Main content adjustments */
+    main h2 {
+        font-size: 2.2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
