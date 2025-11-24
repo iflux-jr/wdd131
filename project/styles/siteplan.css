@@ -1,0 +1,143 @@
+/* siteplan.css */
+
+:root {
+    --primary-color: #2E7D32; /* Forest Green */
+    --secondary-color: #FF9800; /* Trail Orange */
+    --accent-color: #1B5E20; /* Dark Green */
+    --text-color: #333333;
+    --background-color: #F5F5F5;
+    --white: #FFFFFF;
+}
+        
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+}
+        
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+        
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+        
+.tagline {
+    font-style: italic;
+    opacity: 0.9;
+}
+        
+section {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+        
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-family: 'Georgia', serif;
+}
+        
+h1 {
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+        
+.color-swatch {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+}
+        
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+.text {
+    background-color: var(--text-color);
+}
+
+.background {
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+}
+        
+.font-sample {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+}
+        
+.heading-font {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+}
+        
+.body-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+        
+.wireframe {
+    background: #f8f8f8;
+    border: 2px dashed #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+        
+.mobile-wireframe, .desktop-wireframe {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2rem;
+}
+        
+.mobile-wireframe {
+    width: 300px;
+}
+        
+.desktop-wireframe {
+    width: 600px;
+}
+        
+.wireframe-box {
+    background: #e0e0e0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+}
+        
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 8px;
+}
