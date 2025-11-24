@@ -90,28 +90,28 @@ document.getElementById('hamburger-btn').onclick = function() {
             location: "Rome, Italy",
             dedicated: "2019, March, 10",
             area: 41010,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x225/rome-italy-temple-exterior-2018-1221314-wallpaper.jpg"
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/800x500/6-Rome-Temple-2160338.jpg"
         },
         {
             templeName: "Kona Hawaii",
             location: "Kailua-Kona, Hawaii, United States",
             dedicated: "2000, January, 23",
             area: 9650,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kona-hawaii/400x250/kona-hawaii-temple-lds-275883-wallpaper.jpg"
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kona-hawaii/800x500/kona-hawaii-mormon-temple-941461-wallpaper.jpg"
         },
         {
             templeName: "Copenhagen Denmark",
             location: "Copenhagen, Denmark",
             dedicated: "2004, May, 23",
             area: 25000,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/copenhagen-denmark/400x250/copenhagen-denmark-temple-1073718-wallpaper.jpg"
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/copenhagen-denmark/800x500/copenhagen-denmark-temple-lds-278232-wallpaper.jpg"
         },
         {
             templeName: "Manila Philippines",
             location: "Manila, Philippines",
             dedicated: "1984, September, 25",
             area: 26783,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-129562-wallpaper.jpg"
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/800x500/manila-philippines-temple-lds-129585-wallpaper.jpg"
         }
     ];
 
