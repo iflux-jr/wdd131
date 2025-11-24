@@ -13,18 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // NUCLEAR OPTION - Most basic working version
-document.getElementById('hamburger-btn').onclick = function() {
-    var nav = document.getElementById('main-nav');
-    var btn = document.getElementById('hamburger-btn');
-    
-    if (nav.classList.contains('active')) {
-        nav.classList.remove('active');
-        btn.classList.remove('active');
-    } else {
-        nav.classList.add('active');
-        btn.classList.add('active');
-    }
-};
+    document.getElementById('hamburger-btn').onclick = function() {
+        var nav = document.getElementById('main-nav');
+        var btn = document.getElementById('hamburger-btn');
+        
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            btn.classList.remove('active');
+        } else {
+            nav.classList.add('active');
+            btn.classList.add('active');
+        }
+    };
 
     // Temple data array
     const temples = [
