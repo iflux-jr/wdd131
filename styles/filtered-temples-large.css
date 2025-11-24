@@ -5,6 +5,10 @@
         display: none;
     }
 
+    .close-btn {
+        display: none !important;
+    }
+
     nav {
         position: static;
         transform: none;
@@ -26,6 +30,65 @@
     nav a {
         padding: 0.5rem 1rem;
         border-radius: 4px;
+    }
+
+    /* Album grid for larger screens */
+    .album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .temple-card img {
+        height: 250px;
+    }
+
+    /* Main content adjustments */
+    main h2 {
+        font-size: 2.2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Header adjustments */
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        /* Override the mobile display: none */
+        display: block !important;
+        position: static;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* Remove active class styles for desktop */
+    nav.active {
+        display: block !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     /* Album grid for larger screens */

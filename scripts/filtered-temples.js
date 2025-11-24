@@ -12,36 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
         lastModifiedSpan.textContent = document.lastModified;
     }
     
-    // Hamburger menu functionality
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const mainNav = document.getElementById('main-nav');
+    // NUCLEAR OPTION - Most basic working version
+document.getElementById('hamburger-btn').onclick = function() {
+    var nav = document.getElementById('main-nav');
+    var btn = document.getElementById('hamburger-btn');
     
-    if (hamburgerBtn && mainNav) {
-        hamburgerBtn.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
-            hamburgerBtn.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        const navLinks = mainNav.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mainNav.classList.remove('active');
-                hamburgerBtn.classList.remove('active');
-            });
-        });
+    if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        btn.classList.remove('active');
+    } else {
+        nav.classList.add('active');
+        btn.classList.add('active');
     }
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (mainNav && hamburgerBtn && 
-            !mainNav.contains(event.target) && 
-            !hamburgerBtn.contains(event.target) &&
-            mainNav.classList.contains('active')) {
-            mainNav.classList.remove('active');
-            hamburgerBtn.classList.remove('active');
-        }
-    });
+};
 
     // Temple data array
     const temples = [
@@ -140,9 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function createTempleCard(temple) {
         const card = document.createElement('div');
         card.className = 'temple-card';
-        
-        // Extract year from dedication date for filtering
-        const dedicationYear = parseInt(temple.dedicated.split(',')[0]);
         
         card.innerHTML = `
             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
