@@ -264,16 +264,6 @@ function loadTrails() {
             isFavorite: false
         },
         {
-            id: 3,
-            name: 'North Cascades - Cascade Pass',
-            difficulty: 'Hard',
-            length: '7.4 miles',
-            elevation: '1,800 ft',
-            description: 'Spectacular mountain views and glacier sightings',
-            Image: '',
-            isFavorite: false
-        },
-        {
             id: 4,
             name: 'Mount St. Helens - Harrys Ridge',
             difficulty: 'Moderate',
@@ -322,15 +312,15 @@ function loadTrails() {
 function createTrailCard(trail) {
     const div = document.createElement('div');
     div.className = 'trail-card';
-    
-    // Use image if available, otherwise use icon
-    const imageContent = trail.image 
-        ? `<img src="${trail.image}" alt="${trail.name}" loading="lazy" class="trail-photo">`
-        : `<i class="fas fa-mountain"></i>`;
-    
     div.innerHTML = `
         <div class="trail-image">
-            ${imageContent}
+            <!-- Add loading="lazy" and srcset for responsive images -->
+            <img src="${trail.image}" 
+                 alt="${trail.name} hiking trail"
+                 loading="lazy"
+                 width="400"
+                 height="300"
+                 class="trail-photo">
         </div>
         <div class="trail-content">
             <h3>${trail.name}</h3>
@@ -348,7 +338,6 @@ function createTrailCard(trail) {
         </div>
     `;
     
-    // Add click event to favorite button
     const favBtn = div.querySelector('.favorite-btn');
     favBtn.addEventListener('click', function() {
         toggleFavorite(trail.id, this);

@@ -329,6 +329,7 @@ body.menu-open {
     text-align: center;
     padding: 6rem 0;
     margin-bottom: 3rem;
+    content-visibility: auto;
 }
 
 .hero h2 {
@@ -429,6 +430,7 @@ body.menu-open {
 /* Weather Section */
 /* Weather Section - More Visible Image */
 .weather {
+    content-visibility: auto;
     padding: 4rem 0;
     background: 
         /* Much lighter overlay - changed to 0.4 opacity */
