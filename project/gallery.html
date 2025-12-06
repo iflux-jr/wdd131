@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNW Hiking Collective | Gallery</title>
+    <meta name="description" content="WDD131 - Final Project | Photo gallery from PNW Hiking Collective adventures">
+    <meta name="author" content="Emmanuel Uko">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <h1>PNW Hiking Collective</h1>
+            </div>
+            
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="trails.html"><i class="fas fa-hiking"></i> Trails</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Adventure Gallery</h2>
+                <p>See the beauty our members have captured on their hikes</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-controls">
+                    <button id="view-toggle" class="btn secondary">
+                        <i class="fas fa-th"></i> Toggle View
+                    </button>
+                </div>
+                
+                <div class="gallery-grid" id="gallery-container">
+                    <!-- Gallery items will be loaded dynamically -->
+                </div>
+                
+                <div class="photo-stats">
+                    <h3><i class="fas fa-chart-bar"></i> Gallery Stats</h3>
+                    <div id="stats-container">
+                        <!-- Stats will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-mountain"></i>
+                    <h3>PNW Hiking Collective</h3>
+                </div>
+                <p>&copy; <span id="current-year"></span> Emmanuel Uko.</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p><a href="references.html">References</a></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

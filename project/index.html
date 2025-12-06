@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNW Hiking Collective | Home</title>
+    <meta name="description" content="WDD131 - Final Project | Hiking Collective - Explore the beautiful trails of the Pacific Northwest">
+    <meta name="author" content="Emmanuel Uko">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <h1>PNW Hiking Collective</h1>
+            </div>
+            
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="trails.html"><i class="fas fa-hiking"></i> Trails</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Explore the Beauty of the Pacific Northwest</h2>
+                    <p>Join our community of hiking enthusiasts and discover breathtaking trails</p>
+                    <a href="trails.html" class="btn">View Trails</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Hike With Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Curated Trails</h3>
+                        <p>Carefully selected trails for all skill levels</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>Connect with fellow hiking enthusiasts</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Regular Events</h3>
+                        <p>Weekly group hikes and seasonal events</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-camera"></i>
+                        <h3>Photo Sharing</h3>
+                        <p>Share your adventures with our community</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div id="events-container" class="events-container">
+                    <!-- Events will be loaded dynamically -->
+                </div>
+                <button id="add-event-btn" class="btn secondary">Add Your Own Event</button>
+            </div>
+        </section>
+
+        <section class="weather">
+            <div class="container">
+                <h2>Trail Conditions</h2>
+                <div id="weather-info">
+                    <div class="weather-card">
+                        <i class="fas fa-sun"></i>
+                        <h3>Today's Forecast</h3>
+                        <p>Sunny with a high of 72°F</p>
+                        <p class="condition">Perfect hiking weather!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-mountain"></i>
+                    <h3>PNW Hiking Collective</h3>
+                </div>
+                <p>&copy; <span id="current-year"></span> Emmanuel Uko.</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p><a href="references.html">References</a></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
